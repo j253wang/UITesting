@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Arrive by: "
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/LocationEdit"
+        android:layout_toStartOf="@+id/ArriveBy" />
+
+    <TimePicker
+        android:id="@+id/ArriveBy"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:timePickerMode="spinner"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/buttonAdd"
+        android:layout_alignEnd="@+id/LocationEdit" />
+
+    <Button
+        android:id="@+id/buttonRemove"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_below="@+id/LocationEdit"
+        android:layout_toStartOf="@+id/buttonAdd"
+        android:drawableLeft="@drawable/ic_remove_route"/>
+
+    <EditText
+        android:id="@+id/LocationEdit"
+        android:layout_height="50dp"
+        android:imeOptions="actionDone|flagNoExtractUi"
+        android:inputType="textNoSuggestions"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_width="match_parent"
+        android:hint="Enter destination here"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="3dip"
+        android:layout_marginRight="3dip"
+        android:layout_below="@+id/LocationEdit"
+        android:layout_alignEnd="@+id/LocationEdit"
+        android:drawableLeft="@drawable/ic_add_route"/>
+</RelativeLayout>

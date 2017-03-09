@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="restext">
+        <item>"Origin"</item>
+        <item>"Location 1"</item>
+        <item>"Location 2"</item>
+        <item>"Location 3"</item>
+        <item>"Location 4"</item>
+        <item>"Location 5"</item>
+    </array>
+</resources>
